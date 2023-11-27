@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Settings</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="sass/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="page d-flex">
+    <div class="side-bar position-relative">
+        <h5 class="logo fw-bold text-center">Mlaiki</h5>
+        <ul class="links text-center text-sm-start">
+          <li>
+            <a href="dashboard.html">
+              <i class="fa-regular fa-chart-bar"></i>
+              <span class="d-none d-md-inline">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="active" href="setting.html">
+              <i class="fa-solid fa-gear"></i>
+              <span class="d-none d-md-inline">Setting</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <i class="fa-regular fa-user"></i>
+              <span class="d-none d-md-inline">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html">
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="d-none d-md-inline">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="d-none d-md-inline">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html">
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="d-none d-md-inline">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html">
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="d-none d-md-inline">Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html">
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="d-none d-md-inline">Plans</span>
+            </a>
+          </li>
+        </ul>
+    </div>
+    <div class="content">
+        <!-- START HEAD  -->
+    <div class="head bg-white p-3 d-flex justify-content-between align-items-center">
+          <form action="">
+            <input type="search" placeholder="Type A keyword" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+          <div class="icons">
+            <i class="fa-regular fa-bell fa-lg"></i>
+            <img class="img-fluid" src="images/profile-pic.png" alt="" />
+          </div>
+    </div>
+        <!-- END HEAD  -->
+
+        <!-- START SETTING  -->
+    <div class="setting m-3">
+        <div class="special-title">
+            <h2 class="fw-bold px-3 pb-3 mb-4">Setting</h2>
+        </div>
+        <!-- START SITE CONTROL  -->
+        <div class="card control p-3 my-4 border-0">
+            <div class="title">
+                <h4 class="fw-bold">Site Control</h4>
+                <span class="text-black-50">Control The Website If There Is Maintenance</span>
+            </div>
+            <div class="my-4">
+                <p class="m-0">Website Control</p>
+                <span class="text-black-50">Open/Close Website And Type The Reason</span>
+                <div class="toggle-switch  rounded-pill"></div>
+            </div>
+            <textarea placeholder="Close Message Content" name="" id="" cols="30" rows="6"></textarea>
+        </div>
+        <!-- END SITE CONTROL  -->
+
+        <!-- START GENERAL  -->
+        <div class="card general border-0 p-3 my-4">
+            <div class="title">
+                <h4 class="fw-bold">General Info</h4>
+                <span class="text-black-50">Security Information About Your Account</span>
+            </div>
+            <form class="mt-4" action="">
+                <label class="text-black-50" for="name">First Name</label>
+                <input placeholder="First Name" type="text">
+                <label class="text-black-50" for="name">Last Name</label>
+                <input placeholder="Last Name" type="text">
+                <label class="text-black-50 d-block" for="name">Email</label>
+                <input placeholder="T@Mlaiki.com" disabled type="email"> <span class="ms-2 fw-bold">Change</span>
+            </form>
+        </div>
+        <!-- END GENERAL  -->
+
+        <!-- START SECURITY  -->
+        <div class="card security p-3 my-4 border-0">
+            <div class="title">
+                <h4 class="fw-bold">Security Info</h4>
+                <span class="text-black-50">Security Information About Your Account</span>
+            </div>
+            <div class="my-3 position-relative">
+                <p class="m-0 fw-bold">Password</p>
+                <span class="text-black-50">Last Change On 25/10/2021</span>
+                <button class="position-absolute">Change</button>
+            </div>
+            <div class="my-4">
+                <p class="m-0 fw-bold">Two-Factor Authentication</p>
+                <span class="text-black-50">Enable/Disable The Feature</span>
+                <div class="toggle-switch rounded-pill"></div>
+            </div>
+            <div class="my-4 position-relative">
+                <p class="m-0 fw-bold">Device</p>
+                <span class="text-black-50">Check The login Device List</span>
+                <button class="position-absolute">Device</button>
+            </div>
+        </div>
+        <!-- END SECURITY  -->
+
+        <!-- START SOCIAL  -->
+        <div class="card social p-3 my-4 border-0">
+            <div class="title">
+                <h4 class="fw-bold">General Info</h4>
+                <span class="text-black-50">Security Information About Your Account</span>
+            </div>
+            <div class="inp">
+                <input placeholder="Twitter Username" type="text">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="inp">
+                <input placeholder="Facebook Username" type="text">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="inp">
+                <input placeholder="Linkedin Username" type="text">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="inp">
+                <input placeholder="Youtube Username" type="text">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <!-- END SOCIAL  -->
+
+        <!-- START  WIDGET  -->
+        <div class="card widget p-3 my-4 border-0">
+            <div class="title">
+                <h4 class="fw-bold">Widgets Control</h4>
+                <span class="text-black-50">Show/Hide Widgets</span>
+            </div>
+            <form action="">
+                <input id="1" type="checkbox">
+                <label for="1">
+                    Quick Draft
+                </label>
+            </form>
+            <form action="">
+                <input id="2" type="checkbox">
+                <label for="2">
+                    Yearly Targets
+                </label>
+            </form>
+            <form action="">
+                <input id="3" type="checkbox">
+                <label for="3">
+                    Tickets Statistics
+                </label>
+            </form>
+            <form action="">
+                <input id="4" type="checkbox">
+                <label for="4">
+                    Latest News
+                </label>
+            </form>
+            <form action="">
+                <input id="5" type="checkbox">
+                <label for="5">
+                    Latest Tasks
+                </label>
+            </form>
+            <form action="">
+                <input id="6" type="checkbox">
+                <label for="6">
+                    Top Search Items
+                </label>
+            </form>
+        </div>
+        <!-- END  WIDGET  -->
+
+        <!-- START BACKUP  -->
+        <div class="card backup p-3 my-4 border-0">
+          <div class="title mb-4">
+            <h4 class="fw-bold">Backup Manager</h4>
+            <span class="text-black-50">Control Backup Time And Location</span>
+          </div>
+            <label>Daily
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label>Weekly
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label>Monthly
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <div class="row mt-4 gap-2 d-flex justify-content-between">
+              <div class=" d-flex flex-column justify-content-center align-items-center">
+                <i class="fa-solid fa-server fa-2x"></i>
+                <p class="">Megaman</p>
+              </div>
+              <div class=" d-flex flex-column justify-content-center align-items-center">
+                <i class="fa-solid fa-server fa-2x"></i>
+                <p>Zero</p>
+              </div>
+              <div class=" d-flex flex-column justify-content-center align-items-center">
+                <i class="fa-solid fa-server fa-2x"></i>
+                <p>Sigma</p>
+              </div>
+            </div>
+        </div>
+        <!-- END BACKUP  -->
+    </div>
+        <!-- END SETTING  -->
+    </div>
+    </div>
+    <script src="app.js" async defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
